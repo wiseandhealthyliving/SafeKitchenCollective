@@ -15,7 +15,7 @@
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": "Fritaire Toxic Air Fryer™ Pro",
-    "image": "https://github.com/wiseandhealthyliving/SafeKitchenCollective/blob/main/images/fritaire-non-toxic-air-fryer.webp",
+    "image": "/images/fritaire-non-toxic-air-fryer.webp",
     "description": "9-in-1 Glass Air Fryer, Self-Cleaning, 5 Quart, Rotisserie and Tumbler, Teflon Free.",
     "brand": { "@type": "Brand", "name": "Fritaire" },
     "offers": {
@@ -29,7 +29,7 @@
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": "Ninja Crispi Pro 6-in-1 Glass Air Fryer",
-    "image": "https://github.com/wiseandhealthyliving/SafeKitchenCollective/blob/main/images/ninja-crispi-pro6-air-fryer.webp",
+    "image": "/images/ninja-crispi-pro6-air-fryer.webp",
     "description": "Nontoxic glass air fryer, 450°F, 6qt & 2.5qt Containers. Microwave and Dishwasher Safe.",
     "brand": { "@type": "Brand", "name": "Ninja" },
     "sku": "AS101CY",
@@ -44,7 +44,7 @@
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": "Kismile 18QT Air Fryer Toaster Oven Combo",
-    "image": "https://github.com/wiseandhealthyliving/SafeKitchenCollective/blob/main/images/kismile-18qt-air-fryer.webp",
+    "image": "/images/kismile-18qt-air-fryer.webp",
     "description": "12-in-1 Countertop Convection Airfryer Oven, 70–450℉, fits 8-10″ Pizza.",
     "brand": { "@type": "Brand", "name": "Kismile" },
     "offers": {
@@ -64,7 +64,7 @@
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": "Fritaire Toxic Air Fryer™ Pro | 9-in-1 Glass Air Fryer",
-    "image": "https://github.com/wiseandhealthyliving/SafeKitchenCollective/blob/main/images/fritaire-non-toxic-air-fryer.webp",
+    "image": "/images/fritaire-non-toxic-air-fryer.webp",
     "description": "5 Quart self-cleaning glass air fryer, 400F Vortex cooking, BPA and Teflon-Free.",
     "brand": { "@type": "Brand", "name": "Fritaire" },
     "aggregateRating": {
@@ -83,7 +83,7 @@
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": "Ninja Crispi Pro 6-in-1 Glass Air Fryer (AS101CY)",
-    "image": "https://github.com/wiseandhealthyliving/SafeKitchenCollective/blob/main/images/ninja-crispi-pro6-air-fryer.webp",
+    "image": "/images/ninja-crispi-pro6-air-fryer.webp",
     "description": "Nontoxic glass air fryer with 450°F Max Crisp and dual 6qt/2.5qt containers.",
     "brand": { "@type": "Brand", "name": "Ninja" },
     "sku": "AS101CY",
@@ -103,7 +103,7 @@
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": "Kismile 18QT Air Fryer Toaster Oven Combo",
-    "image": "https://github.com/wiseandhealthyliving/SafeKitchenCollective/blob/main/images/kismile-18qt-air-fryer.webp",
+    "image": "/images/kismile-18qt-air-fryer.webp",
     "description": "12-in-1 Countertop Convection Oven, 18QT capacity, fits 10 inch pizza.",
     "brand": { "@type": "Brand", "name": "Kismile" },
     "aggregateRating": {
@@ -142,11 +142,42 @@
 </script>
 
 <style>
+        :root {
+            --navy: #0a192f;
+            --health-green: #2d6a4f;
+            --gold-accent: #c5a059;
+            --off-white: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.8; }
+        .navbar { background-color: var(--navy); }
+        .navbar-brand, .nav-link { color: white !important; }
+        .bg-navy { background-color: var(--navy); color: white; }
+        .text-green { color: var(--health-green); }
+        .btn-check-price { 
+            background-color: var(--health-green); 
+            color: white; 
+            border: 2px solid var(--health-green);
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-check-price:hover { 
+            background-color: transparent; 
+            color: var(--health-green); 
+        }
+        .gold-border { border-top: 3px solid var(--gold-accent); }
+        .comparison-table thead { background-color: var(--navy); color: white; }
+        footer { background-color: var(--navy); color: #ccc; padding: 40px 0; }
+        .hero-section { background: linear-gradient(rgba(10,25,47,0.8), rgba(10,25,47,0.8)), url('https://images.unsplash.com/photo-1585238342024-78d387f4a707?q=80&w=2000') center/cover; color: white; padding: 100px 0; }
+   
 html { scroll-behavior: smooth; }
+nav { background-color: #1A3D6D; }
+h1, h2, h3 { font-family: 'Monsterrat', sans-serif; }
+p { font-family: 'Lato', Sans-serif; }
 .btn-lg { font-weight:600; }
 .text-danger { color: #A80000 !important }   
 img .topimg { width: 80%; height: auto; }
 </style>
+
 </head>
 <body>
 <main role="main">
@@ -158,15 +189,16 @@ img .topimg { width: 80%; height: auto; }
 </section>
 
 <!-- NAVIGATION -->
-<nav role="navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav role="navigation" class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="#hero">SafeKitchenCollective</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Navbar Button" aria-labelledby="navbarspan">
+    <a class="text-white navbar-brand" href="#hero">SafeKitchenCollective</a>
+    <button class="bg-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Navbar Button" aria-labelledby="navbarspan">
       <span id="navbarspan" class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+         <li class="nav-item"><a class="nav-link fw-bold text-warning" href="buying-guide.html">2026 Buying Guide</a></li> 
         <li class="nav-item"><a class="nav-link" href="#comparison">Comparison</a></li>
         <li class="nav-item"><a class="nav-link" href="#models">Models</a></li>
         <li class="nav-item"><a class="nav-link" href="#mission">Our Mission</a></li>
@@ -186,6 +218,7 @@ img .topimg { width: 80%; height: auto; }
     <h1 class="fw-bold">Stop Risking Your Family’s Health</h1>
     <p class="lead">Discover the safest air fryers of 2026 — Glass & Stainless. Zero Toxic Coatings. Verified Material Purity.</p>
     <a href="#comparison" class="btn btn-success btn-lg mt-3">See Why These Are the Only Safe Air Fryers</a>
+   <a href="buying-guide.html" class="btn btn-outline-dark btn-lg mt-3 ms-md-2">Read the 2,000+ Word Safety Study</a>
   </div>
 </section>
 </header>
@@ -193,7 +226,7 @@ img .topimg { width: 80%; height: auto; }
 <!-- MISSION SECTION -->
 <section id="mission" class="py-5 bg-white">
   <div class="container">
-    <h2>Our Mission</h2>
+    <h2 class="text-green">Our Mission</h2>
     <p>Your family deserves appliances that are genuinely safe. We strip away marketing fluff to deliver <strong>evidence-backed guidance on material purity, chemical-free cooking, and long-term health protection</strong>.</p>
   </div>
 </section>
@@ -201,7 +234,7 @@ img .topimg { width: 80%; height: auto; }
 <!-- MATERIAL PURITY SECTION -->
 <section id="material-purity" class="py-5 bg-light">
   <div class="container">
-    <h2>Why Material Purity Matters</h2>
+    <h2 class="text-green">Why Material Purity Matters</h2>
     <p>Most air fryers still rely on non-stick coatings — silently leaching chemicals into every meal. Only <strong>glass and stainless surfaces</strong> eliminate this risk entirely. <strong>Anything else is a compromise.</strong></p>
   </div>
 </section>
@@ -209,7 +242,7 @@ img .topimg { width: 80%; height: auto; }
 <!-- HOW TO CHOOSE SECTION -->
 <section id="choose-safest" class="py-5 bg-white">
   <div class="container">
-    <h2>How to Choose the Safest Air Fryer</h2>
+    <h2 class="text-green">How to Choose the Safest Air Fryer</h2>
     <ul>
       <li><strong>Material Contact:</strong> Glass or stainless only in contact with food.</li>
       <li><strong>Eliminate Coatings:</strong> Avoid PTFE, PFOA, ceramic, or non-stick coatings.</li>
@@ -227,7 +260,7 @@ img .topimg { width: 80%; height: auto; }
     <h2 class="mb-4">Side-by-Side Comparison of Top Air Fryers</h2>
     <p class="text-danger fw-bold mb-3">These are the only models we recommend for true chemical-free cooking — anything lower scored is a risk.</p>
     <div class="table-responsive">
-      <table class="table table-bordered text-center align-middle">
+      <table class="table-bordered table table-bordered text-center align-middle">
         <thead class="table-dark">
           <tr>
             <th>Feature</th>
@@ -272,11 +305,12 @@ img .topimg { width: 80%; height: auto; }
         <h3>Fritaire Glass Air Fryer</h3>
         <p><strong>Safety Score: 96 / 100</strong></p>
         <div class="d-flex align-items-center mb-2">
-          <img src="nsf-badge.png" alt="NSF Certified" style="height:40px;margin-right:10px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/NSF_International_logo.svg" alt="NSF Certified" style="height:40px;margin-right:10px;">       
           <img src="global-recycled-badge.png" alt="Global Recycled Standard Certified" style="height:40px;">
         </div>
         <p>True glass + stainless, no coatings. <strong>Don't compromise — this is the only model with verified 96/100 material safety.</strong></p>
         <a href="/products/fritaire-glass-air-fryer-review.html" class="btn btn-primary">Learn Why This Is the Safest Choice</a>
+        <a href="buying-guide.html#reviews" class="btn btn-outline-dark mt-2">Read Full Fritaire Safety Review</a>
         <a href="https://amzn.to/4tUkfkK" class="btn btn-success mt-2">Secure Yours Before It Sells Out</a>
       </div>
     </div>
@@ -300,6 +334,7 @@ img .topimg { width: 80%; height: auto; }
         </div>
         <p>Glass + stainless/metal. No coatings. <strong>Versatile, powerful, and right for the health conscious: this model cannot be beaten.</strong></p>
         <a href="/products/big-boss-glass-air-fryer-review.html" class="btn btn-primary">Learn Why This Is the Safest Choice</a>
+        <a href="buying-guide.html#recipes" class="btn btn-outline-dark mt-2">See Ninja High-Heat Performance</a>
         <a href="https://amzn.to/4l2dedW" class="btn btn-success mt-2">Secure Yours Before It Sells Out</a>
       </div>
     </div>
@@ -323,6 +358,7 @@ img .topimg { width: 80%; height: auto; }
         </div>
         <p>Glass + stainless/metal. Chemical-free, durable, and easy to inspect. <strong>Only these materials ensure your family's safety.</strong></p>
         <a href="/products/kismile-wonder-oven-pro-review.html" class="btn btn-primary">Learn Why This Is the Safest Choice</a>
+        <a href="buying-guide.html#specs" class="btn btn-outline-dark mt-2">Check Kismile Technical Specs</a>
         <a href="https://amzn.to/3OyxFTy" class="btn btn-success mt-2">Secure Yours Before It Sells Out</a>
       </div>
     </div>
@@ -370,7 +406,7 @@ img .topimg { width: 80%; height: auto; }
 <!-- FAQ SECTION -->
 <section id="faq" class="py-5 bg-white">
   <div class="container">
-    <h2>Frequently Asked Questions</h2>
+    <h2 class="text-green">Frequently Asked Questions</h2>
     <div class="accordion" id="faqAccordion">
       <div class="accordion-item">
         <h2 class="accordion-header" id="faq1Header">
@@ -475,9 +511,9 @@ img .topimg { width: 80%; height: auto; }
 </section>
 
 <!-- REFERENCES -->
-<section id="references" class="py-5 bg-light">
+<section id="references" class="refsection py-5 bg-light">
   <div class="container">
-    <h2>References & Sources</h2>
+    <h2 class="text-green">References & Sources</h2>
     <ul>
       <li><a href="https://www.efsa.europa.eu/en/topics/topic/food-contact-materials" target="_blank">EFSA - Food Contact Materials Safety</a></li>
       <li><a href="https://www.chemicalwatch.com/" target="_blank">Chemical Watch - Non-toxic Cooking Surfaces</a></li>
@@ -498,4 +534,4 @@ img .topimg { width: 80%; height: auto; }
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-  </html>
+    </html>
