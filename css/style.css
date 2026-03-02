@@ -1,0 +1,581 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap');
+
+        :root {
+            --primary: #1e293b;       /* Deep Slate */
+            --accent: #4a6741;        /* Sage Green */
+            --gold: #b8924e;          /* Muted Gold */
+            --bg-light: #fdfcf9;      /* Warm Off-White */
+            --text-main: #334155;
+            --white: #ffffff;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            color: var(--text-main); 
+            background-color: var(--bg-light);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3 { 
+            font-family: 'Playfair Display', serif; 
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        /* Affiliate Bar */
+        #affiliate-disclosure {
+            background-color: #f8fafc;
+            font-size: 0.8rem;
+            border-bottom: 1px solid #e2e8f0;
+            color: #64748b;
+        }
+
+        /* Modern Navbar */
+        .navbar { 
+            background-color: var(--white) !important; 
+            padding: 1.2rem 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.03);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand { 
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            color: var(--primary) !important;
+            font-size: 1.5rem;
+        }
+        .nav-link { color: var(--text-main) !important; font-weight: 500; margin-left: 15px; }
+        .nav-link:hover { color: var(--accent) !important; }
+
+        /* Hero Section */
+        #hero {
+            background: radial-gradient(circle at top right, #f8fafc, #f1f5f9);
+            padding: 120px 0 80px;
+        }
+        #hero h1 { font-size: clamp(3.5rem, 5vw, 3.8rem); line-height: 1.1; margin-bottom: 1.5rem; }
+        .hero-lead { font-size: 1.25rem; max-width: 700px; margin: 0 auto 2rem; color: #475569; }
+        
+        /* Modern Verification Container */
+        .verify-container {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            text-align: left;
+            gap: 15px;
+            background: var(--white);
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: 2rem;
+            border: 1px solid #e2e8f0;
+        }
+        .verify-item { font-size: 0.9rem; font-weight: 600; color: var(--accent); display: flex; align-items: center; }
+        .verify-item i { margin-right: 8px; font-size: 1.1rem; }
+
+        /* Mission Statement - The "Breather" */
+        #mission {
+            padding: 100px 0;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        #mission p { 
+            font-size: 1.4rem; 
+            font-weight: 300; 
+            color: #1e293b;
+            line-height: 1.8;
+        }
+
+        /* Comparison Table */
+        .table-container {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+        }
+        .table-hover tbody tr:hover { background-color: #f8fafc; }
+        .safety-score-pill {
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .top-pick-label {
+            color: var(--accent);
+            font-weight: 700;
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        /* Product Cards */
+        .product-card {
+            background: var(--white);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid #f1f5f9;
+            transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+        .card-img-wrapper {
+            padding: 20px;
+            background: #f8fafc;
+            text-align: center;
+        }
+        .card-img-wrapper img {
+            max-height: 250px;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+        .card-body-content {
+            padding: 30px;
+            flex-grow: 1;
+        }
+        .safety-badge {
+            background: #ecf3eb;
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* Buttons */
+        .btn-cta {
+            background-color: var(--accent);
+            color: white;
+            padding: 14px 32px;
+            font-weight: 600;
+            border-radius: 12px;
+            border: none;
+            transition: 0.3s;
+        }
+        .btn-cta:hover { background-color: #3d5435; color: white; transform: translateY(-2px); }
+        .btn-outline-custom {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 12px;
+        }
+        
+        /*MATERIAL PURITY*/
+          .text-green { color: #198754 !important; font-weight: 700; }
+  
+  .purity-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+    max-width: 800px;
+  }
+
+  /* List Styling Consistent with References */
+  .selection-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .selection-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    background: #f8f9fa; /* Subtle card effect */
+    border-radius: 8px;
+    border-left: 4px solid #198754;
+    transition: transform 0.2s ease;
+  }
+
+  .selection-list li:hover {
+    transform: translateX(5px);
+    background: #f1f3f5;
+  }
+
+  .selection-list i {
+    font-size: 1.5rem;
+    color: #198754;
+    margin-right: 18px;
+    line-height: 1;
+  }
+
+  .selection-list strong {
+    color: #002D62; /* Same professional dark blue as your links */
+    display: block;
+    margin-bottom: 2px;
+  }
+  
+  /* Styling for the button to look consistent */
+.btn-outline-success {
+  border-width: 2px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* PRINT-ONLY STYLES: This triggers when saving to PDF */
+@media print {
+  /* Hide everything except the checklist */
+  body * {
+    visibility: hidden;
+  }
+  #choose-safest, #choose-safest * {
+    visibility: visible;
+  }
+  #choose-safest {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white !important;
+    color: black !important;
+  }
+  /* Hide the download button itself on the PDF */
+  .btn-outline-success, .bi-file-earmark-pdf {
+    display: none !important;
+  }
+  /* Ensure icons and text colors are dark for printing */
+  .selection-list li {
+    border: 1px solid #ddd !important;
+    background: white !important;
+  }
+  .text-green, .selection-list i {
+    color: #198754 !important;
+  }
+}
+
+/* --- Global Theme & Typography --- */
+.text-green { color: #198754 !important; font-weight: 700; }
+.ref-link { color: #002D62 !important; text-decoration: none; font-weight: 500; transition: 0.2s; }
+.ref-link:hover { color: #0056b3 !important; text-decoration: underline; }
+
+/* --- Checklist & Selection Styling --- */
+.selection-list { list-style: none; padding-left: 0; }
+.selection-list li {
+  display: flex; align-items: flex-start; margin-bottom: 1rem;
+  padding: 1rem; background: #f8f9fa; border-left: 4px solid #198754; border-radius: 4px;
+}
+.selection-list i { font-size: 1.25rem; color: #198754; margin-right: 15px; margin-top: 2px; }
+.selection-list strong { color: #002D62; display: block; }
+
+/* --- Table & Mobile UX --- */
+#comparisonTableContainer { position: relative; transition: all 0.3s ease; }
+.table thead th { background-color: #002D62; color: white; border: none; text-transform: uppercase; font-size: 0.8rem; }
+.table tbody td { font-size: 0.9rem; }
+.scroll-hint { color: #002D62; font-weight: 600; animation: nudge 2s infinite; }
+@keyframes nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(5px); } }
+.fade-out { opacity: 0; visibility: hidden; transition: 0.5s; }
+
+/* --- Full Screen Mode --- */
+.fullscreen-table {
+  position: fixed !important; top: 0; left: 0; width: 100vw !important; height: 100vh !important;
+  background: white; z-index: 9999; padding: 2rem; overflow: auto;
+}
+.no-scroll { overflow: hidden; }
+
+/* --- PDF Export & Badge --- */
+.safety-badge {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  border: 3px double white; box-shadow: 0 0 0 3px #198754;
+}
+.badge-inner span { font-size: 0.5rem; font-weight: 800; display: block; line-height: 1; }
+
+@media print {
+  body * { visibility: hidden; }
+  #choose-safest, #choose-safest * { visibility: visible; }
+  #choose-safest { position: absolute; left: 0; top: 0; width: 100%; }
+  .btn, .scroll-hint, .close-fs-btn { display: none !important; }
+  #pdf-header { display: block !important; visibility: visible !important; }
+  .safety-badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+    
+        /*CTA SECTION*/
+       #final-cta {
+    position: relative;
+    /* Deep gradient for a premium "dark mode" look */
+    background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+    border-top: 4px solid #198754;
+    padding: 6rem 0;
+    overflow: hidden;
+  }
+
+  /* Subtle Grid Pattern Overlay */
+  #final-cta::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  #final-cta h2 {
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+
+  .cta-subtext {
+    font-size: 1.35rem;
+    color: #ced4da;
+    max-width: 750px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.4;
+  }
+
+  /* Elevated Button Styling */
+  .btn-premium-green {
+    background-color: #198754;
+    border: none;
+    color: white;
+    padding: 1.2rem 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(25, 135, 84, 0.4);
+  }
+
+  .btn-premium-green:hover {
+    background-color: #157347;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(25, 135, 84, 0.6);
+    color: white;
+  }
+
+  .btn-premium-outline {
+    padding: 1.2rem 2.5rem;
+    border: 2px solid rgba(255,255,255,0.6);
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .btn-premium-outline:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #fff;
+    transform: translateY(-3px);
+  }
+
+  .affiliate-disclaimer {
+    max-width: 550px;
+    margin: 4rem auto 0 auto;
+    font-style: italic;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 2rem;
+    color: #adb5bd;
+  }
+  
+  /* Table Aesthetics */
+.table thead th {
+  border: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.table tbody td {
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Ensure the table stays visible and clean in PDF */
+@media print {
+  .table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .table th, .table td {
+    border: 1px solid #dee2e6 !important;
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+  /* Keep the green/blue headers visible in print if possible, 
+     or default to bold text for readability */
+  .table thead th {
+    background-color: #f8f9fa !important;
+    color: #000 !important;
+    font-weight: bold;
+  }
+}
+
+/* Full Screen Mode for the Table */
+.fullscreen-table {
+  position: fixed !important;
+  top: 0; left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: white;
+  z-index: 9999;
+  padding: 20px;
+  overflow: auto;
+}
+
+/* Close button that appears only in full screen */
+.close-fs-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 10000;
+  display: none; /* Hidden by default */
+}
+
+body.no-scroll {
+  overflow: hidden; /* Prevents background scrolling when table is open */
+}
+
+
+/* The Purity Badge Styling */
+.safety-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #f1f5f9; /* Light slate background */
+    color: var(--primary);     /* Deep slate text from your :root */
+    padding: 4px 12px;
+    margin: 2%;
+    border-radius: 4px;        /* Simple slight round corner, not a circle */
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 0px solid #000000; /* Very subtle thin border */
+}
+
+/* Ensure icons inside the badge look right */
+.safety-badge i {
+    font-size: 0.9rem;
+    color: var(--accent);      /* Keeps the icon your sage green */
+}
+
+.badge-inner i {
+  font-size: 1.2rem;
+  display: block;
+  line-height: 1;
+}
+
+.badge-inner span {
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Ensure Header is hidden on web, visible on print */
+#pdf-header {
+  display: none;
+}
+
+@media print {
+  #pdf-header {
+    display: block !important;
+  }
+  
+  /* Force background colors to print for the badge */
+  .safety-badge {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  /* Hide the web-only 'How to Choose' title if the PDF header is active */
+  #choose-safest h2.text-green:not(#pdf-header h2) {
+    display: none;
+  }
+}
+
+.scroll-hint {
+  opacity: 0.8;
+  animation: nudge 2s infinite;
+  color: #002D62; /* Using your professional navy */
+  font-weight: 500;
+}
+
+/* Subtle side-to-side animation to catch the eye */
+@keyframes nudge {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+/* Hide hint once the user has scrolled */
+.scroll-hint.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Custom scrollbar for the table to make it look premium */
+.table-responsive::-webkit-scrollbar {
+  height: 6px;
+}
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #198754; 
+  border-radius: 10px;
+}
+
+
+        
+        /*References Section*/
+     #references .container {
+    max-width: 800px; /* Optional: keeps the list focused */
+  }
+
+  /* Professional Dark Blue for Links */
+  .ref-link {
+    color: #002D62 !important; 
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .ref-link:hover {
+    color: #0056b3 !important;
+    text-decoration: underline;
+  }
+
+  /* List Styling */
+  .custom-ref-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .custom-ref-list li {
+    display: flex;
+    align-items: flex-start; /* Aligns icon with the first line of text */
+    margin-bottom: 1.25rem;
+  }
+
+  /* Icon Styling */
+  .custom-ref-list i {
+    color: #198754; /* Professional Green */
+    font-size: 1.2rem;
+    margin-right: 15px;
+    margin-top: 2px; /* Fine-tuned vertical alignment */
+  }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: #94a3b8;
+            padding: 80px 0 40px;
+        }
+        footer h5 { color: white; margin-bottom: 25px; font-family: 'Inter', sans-serif; font-size: 1.1rem; }
+        
+        footer p {
+        color: #94a3b8 !important;
+          }
