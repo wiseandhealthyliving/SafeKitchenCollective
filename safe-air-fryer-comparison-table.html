@@ -22,37 +22,75 @@
  
         <link href="css/style.css" rel="stylesheet">
         
-        
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Nontoxic Glass Air Fryer Comparison 2026",
-        "description": "Expert analysis of the top 3 chemical-free glass and stainless air fryers: Fritaire, Ninja Crispi Pro, and Kismile.",
-        "brand": {
-            "@type": "Brand",
-            "name": "Safe Kitchen Collective"
-        },
-        "mainEntity": [
-            {
-                "@type": "Product",
-                "name": "Fritaire Glass Air Fryer",
-                "url": "https://amzn.to/4tUkfkK"
-            },
-            {
-                "@type": "Product",
-                "name": "Ninja Crispi Pro 6-in-1 Glass Air Fryer",
-                "url": "https://amzn.to/4l2dedW"
-            },
-            {
-                "@type": "Product",
-                "name": "Kismile Wonder Oven Pro",
-                "url": "https://amzn.to/3OyxFTy"
-            }
-        ]
+<!--PRODUCT SCHEMA WITH AGGREGATE RATINGS-->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Fritaire Toxic Air Fryer™ Pro",
+    "image": "/images/fritaire-non-toxic-air-fryer.webp",
+    "description": "9-in-1 Glass Air Fryer, Self-Cleaning, 5 Quart, Rotisserie and Tumbler, Teflon Free.",
+    "brand": { "@type": "Brand", "name": "Fritaire" },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "125"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://amzn.to/4tUkfkK",
+      "price": "199.99",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
     }
-    </script>
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Ninja Crispi Pro 6-in-1 Glass Air Fryer",
+    "image": "/images/ninja-crispi-pro6-air-fryer.webp",
+    "description": "Nontoxic glass air fryer, 450°F, 6qt & 2.5qt Containers. Microwave and Dishwasher Safe.",
+    "brand": { "@type": "Brand", "name": "Ninja" },
+    "sku": "AS101CY",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.4",
+      "reviewCount": "157"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://amzn.to/4l2dedW",
+      "price": "299.99",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Kismile 18QT Air Fryer Toaster Oven Combo",
+    "image": "/images/kismile-18qt-air-fryer.webp",
+    "description": "12-in-1 Countertop Convection Airfryer Oven, 70–450℉, fits 8-10″ Pizza.",
+    "brand": { "@type": "Brand", "name": "Kismile" },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "210"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://amzn.to/3OyxFTy",
+      "price": "99.98",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  }
+]
+</script>
     
     <style>
         /* CSS Variables */
@@ -593,3 +631,4 @@
     </script>
 </body>
 </html>
+
