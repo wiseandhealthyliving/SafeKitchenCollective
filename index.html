@@ -14,10 +14,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe Kitchen Collective | Top Safe Air Fryers 2026</title>
     <meta name="description" content="Compare the safest glass and stainless air fryers of 2026 with verified material purity.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://safekitchencollective.online/" />
+    
+    <meta name="pinterest-rich-pin" content="true">
+    <meta property="og:title" content="Safest Air Fryers of 2026 | Glass & Stainless Only">
+<meta property="og:description" content="Compare the safest glass and stainless air fryers with verified material purity and safety scores.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://safekitchencollective.online/">
+<meta property="og:image" content="https://safekitchencollective.online/images/air-fryer-comparison.png">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">-->
     
     <!--PRODUCT SCHEMA WITH AGGREGATE RATINGS-->
 <script type="application/ld+json">
@@ -25,7 +34,7 @@
   {
     "@context": "https://schema.org/",
     "@type": "Product",
-    "name": "Fritaire Toxic Air Fryer™ Pro",
+    "name": "Fritaire Glass Air Fryer Pro",
     "image": "/images/fritaire-non-toxic-air-fryer.webp",
     "description": "9-in-1 Glass Air Fryer, Self-Cleaning, 5 Quart, Rotisserie and Tumbler, Teflon Free.",
     "brand": { "@type": "Brand", "name": "Fritaire" },
@@ -89,6 +98,24 @@
 ]
 </script>
 
+<!--Breadcrumbs Schema-->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [{
+ "@type": "ListItem",
+ "position": 1,
+ "name": "Home",
+ "item": "https://safekitchencollective.online/"
+ },{
+ "@type": "ListItem",
+ "position": 2,
+ "name": "Air Fryer Safety Reviews"
+ }]
+}
+</script>
+
 <!-- FAQ SCHEMA MARKUP FOR RICH SNIPPETS -->
 <script type="application/ld+json">
 {
@@ -106,6 +133,21 @@
   ]
 }
 </script>
+
+<!--Website Schema-->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "Safe Kitchen Collective",
+ "url": "https://safekitchencollective.online",
+ "potentialAction": {
+   "@type": "SearchAction",
+   "target": "https://safekitchencollective.online/?s={search_term_string}",
+   "query-input": "required name=search_term_string"
+ }
+}
+</script>
   
 </head>
 <body>
@@ -120,7 +162,7 @@
 <nav role="navigation" class="navbar navbar-expand-lg">
   <div class="container">
     <a class="text-white navbar-brand" href="#hero">SafeKitchenCollective</a>
-    <button class="bg-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Navbar Button" aria-labelledby="navbarspan">
+    <button class="bg-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Navbar Button" aria-labelledby="navbarspan" aria-controls="navbarNav">
       <span id="navbarspan" class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -134,12 +176,19 @@
         <li class="nav-item"><a class="nav-link" href="#choose-safest">How to Choose</a></li>
         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="#references">References</a></li>
-             <hr class="text-secondary" />
-                <ul class="navbar-nav">                      
-                   <li class="nav-item"><a href="material-degradation-under-heat.html" class="nav-link text-dark text-decoration-none">Material Degradation Under Heat</a></li>
-                   <li class="nav-item"><a href="safety-scoring-framework.html" class="nav-link text-dark text-decoration-none">Safety Scoring Framework</a></li>              
-                   <li class="nav-item"><a href="safe-air-fryer-comparison-table.html" class="nav-link text-dark text-decoration-none">Safe Air Fryer Comparison Table</a></li>      
-               </ul>  
+              <!-- Resources Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="material-degradation-under-heat.html">Material Degradation</a></li>
+                            <li><a class="dropdown-item fw-bold" href="safety-scoring-framework.html">Safety Scoring Framework</a></li>
+                            <li><a class="dropdown-item" href="safe-air-fryer-comparison-table.html">Comparison Table</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item fw-bold text-warning" href="buying-guide.html">Full 2026 Guide</a></li>
+                        </ul>
+                    </li>
       </ul>
     </div>
   </div>
@@ -165,7 +214,7 @@
   </div>
 </header>
 
-<main role="role">
+<main role="main">
 <!--MISSION-->
 <section id="mission">
   <div class="container">
@@ -210,7 +259,7 @@
       <button onclick="toggleFS()" class="btn btn-sm btn-outline-dark"><i class="bi bi-arrows-fullscreen" aria-label="fullscreen"></i> Full Screen</button>
     </div>
 
-    <div class="table-responsive shadow-sm" id="comparisonTableContainer">
+    <div class="table-responsive shadow-sm" id="comparisonTableContainer>
       <table class="table table-bordered align-middle">
         <thead>
           <tr>
@@ -258,7 +307,7 @@
 </div>
     <p class="text-danger mb-3">These are the only models we recommend for true chemical-free cooking — anything lower scored is a risk.</p>
     
-    <div class="table-responsive shadow-sm rounded" id="comparisonTableContainer">
+    <div class="table-responsive shadow-sm rounded" id="mainComparisonTable">
   <table class="table table-bordered align-middle mb-0" id="comparisonTable">
     </table>
 </div>
@@ -290,7 +339,7 @@
    class="btn btn-success btn-sm">
    Secure Yours Before It Sells Out
 </a>
- <a href="https://wiseandhealthyliving.github.io/SafeKitchenCollective/fritaire-glass-air-fryer-review.html" class="btn btn-outline-secondary mt-2 btn-sm">Read the Full Fritaire Review <i class="bi bi-box-arrow-up-right text-secondary me-2"></i></a>        
+ <a href="fritaire-glass-air-fryer-review.html" class="btn btn-outline-secondary mt-2 btn-sm">Read the Full Fritaire Review <i class="bi bi-box-arrow-up-right text-secondary me-2"></i></a>        
             </td>
             <td><a href="https://amzn.to/4l2dedW"
    target="_blank"
@@ -302,7 +351,7 @@
    class="btn btn-success btn-sm">
    Secure Yours Before It Sells Out
 </a>
-    <a href="https://wiseandhealthyliving.github.io/SafeKitchenCollective/ninja-crispi-pro6-air-fryer-review.html" class="btn btn-outline-secondary mt-2 btn-sm">Read the Full Ninja Review <i class="bi bi-box-arrow-up-right text-secondary me-2"></i></a>
+    <a href="ninja-crispi-pro6-air-fryer-review.html" class="btn btn-outline-secondary mt-2 btn-sm">Read the Full Ninja Review <i class="bi bi-box-arrow-up-right text-secondary me-2"></i></a>
        
     </td>
             <td><a href="https://amzn.to/3OyxFTy"
@@ -315,7 +364,7 @@
    class="btn btn-success btn-sm">
    Secure Yours Before It Sells Out
             </a>
-         <a href="https://wiseandhealthyliving.github.io/SafeKitchenCollective/kismile-wonder-oven-pro-review.html" class="btn btn-outline-secondary mt-2 btn-sm">Read the Full Kismile Review <i class="bi bi-box-arrow-up-right text-secondary me-2"></i></a>
+         <a href="kismile-wonder-oven-pro-review.html" class="btn btn-outline-secondary mt-2 btn-sm">Read the Full Kismile Review <i class="bi bi-box-arrow-up-right text-secondary me-2"></i></a>
    
             </td>
           </tr>
@@ -326,6 +375,66 @@
 
     </div>
   </div>
+</section>
+
+<section class="py-5 bg-white">
+<div class="container">
+
+
+<!--Internal Loops-->
+<h3 class="mb-4">Research Behind Our Safety Scores</h3>
+
+<p>Every air fryer on this page is evaluated using a transparent safety framework based on material stability, heat resistance, and chemical exposure risk.</p>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<a href="/safety-scoring-framework.html" class="text-decoration-none">
+<div class="card shadow-sm h-100">
+<div class="card-body">
+<h5>Safety Scoring Framework</h5>
+<p>Learn how our 100-point safety rating system evaluates material purity and cooking safety.</p>
+</div>
+</div>
+</a>
+</div>
+
+<div class="col-md-3">
+<a href="/material-degradation-under-heat.html" class="text-decoration-none">
+<div class="card shadow-sm h-100">
+<div class="card-body">
+<h5>Material Degradation Under Heat</h5>
+<p>Scientific analysis of how coatings and metals behave at high cooking temperatures.</p>
+</div>
+</div>
+</a>
+</div>
+
+<div class="col-md-3">
+<a href="/safe-air-fryer-comparison-table.html" class="text-decoration-none">
+<div class="card shadow-sm h-100">
+<div class="card-body">
+<h5>Full Safety Comparison Table</h5>
+<p>Complete ranking of safe air fryers with materials, coatings, and safety scores.</p>
+</div>
+</div>
+</a>
+</div>
+
+<div class="col-md-3">
+<a href="/pfas-nonstick-air-fryer-coatings.html" class="text-decoration-none">
+<div class="card shadow-sm h-100">
+<div class="card-body">
+<h5>PFAS & Non-Stick Coatings Explained</h5>
+<p>Scientific breakdown of PTFE, PFOA, ceramic coatings and real exposure risks.</p>
+</div>
+</div>
+</a>
+</div>
+
+
+</div>
+</div>
 </section>
 
 <!--
@@ -354,7 +463,7 @@
          <picture>
           <source srcset="images/fritaire-non-toxic-air-fryer.webp" type="image/webp">
           <source srcset="images/fritaire-non-toxic-air-fryer.jpg" type="image/jpeg">
-          <img src="images/fritaire-non-toxic-air-fryer.webp" class="topimage img-fluid mx-auto d-block rounded-2 mb-1" alt="Fritaire Non Toxic Air Fryer™ Pro | 9-in-1 Glass Air Fryer | Self-Cleaning | 5 Quart | Rotisserie and Tumbler | 400F Vortex For Even Cooking, BPA-Free Teflon Free, Recrisp, Roast, Bake, White">
+          <img src="images/fritaire-non-toxic-air-fryer.webp" loading="lazy" class="topimage img-fluid mx-auto d-block rounded-2 mb-1" alt="Fritaire Non Toxic Air Fryer™ Pro | 9-in-1 Glass Air Fryer | Self-Cleaning | 5 Quart | Rotisserie and Tumbler | 400F Vortex For Even Cooking, BPA-Free Teflon Free, Recrisp, Roast, Bake, White">
         </picture>
             </div>
             <div class="card-body-content">
@@ -394,7 +503,7 @@
         <picture>
           <source srcset="images/ninja-crispi-pro6-air-fryer.webp" type="image/webp">
           <source srcset="images/ninja-crispi-pro6-air-fryer.jpg" type="image/jpeg">
-          <img src="images/ninja-crispi-pro6-air-fryer.webp" class="topimage img-fluid mx-auto d-block rounded-2 mb-1" alt="Ninja Crispi Pro 6-in-1 Glass Air Fryer | 450°F, Nontoxic, 6qt & 2.5qt Containers & Lids | Microwave, Freezer, Dishwasher Safe | Max Crisp, Air Fry, Bake, Roast, Recrisp, Dehydrate |Cyberspace">
+          <img src="images/ninja-crispi-pro6-air-fryer.webp" loading="lazy" class="topimage img-fluid mx-auto d-block rounded-2 mb-1" alt="Ninja Crispi Pro 6-in-1 Glass Air Fryer | 450°F, Nontoxic, 6qt & 2.5qt Containers & Lids | Microwave, Freezer, Dishwasher Safe | Max Crisp, Air Fry, Bake, Roast, Recrisp, Dehydrate |Cyberspace">
         </picture>
             </div>
             <div class="card-body-content">
@@ -435,7 +544,7 @@
                  <picture>
           <source srcset="images/kismile-18qt-air-fryer.webp" type="image/webp">
           <source srcset="images/kismile-18qt-air-fryer.jpg" type="image/jpeg">
-          <img src="images/kismile-18qt-air-fryer.webp" class="topimage img-fluid mx-auto d-block rounded-2 mb-1" alt="Kismile 18QT Air Fryer Toaster Oven Combo, 12-in-1 Countertop Convection Airfryer Oven, 70–450℉, Bake, Roast, Reheat & Broil, Fits 8-10″ Pizza, Includes Full Accessories, Stainless Steel (Silver)">
+          <img src="images/kismile-18qt-air-fryer.webp" loading="lazy" class="topimage img-fluid mx-auto d-block rounded-2 mb-1" alt="Kismile 18QT Air Fryer Toaster Oven Combo, 12-in-1 Countertop Convection Airfryer Oven, 70–450℉, Bake, Roast, Reheat & Broil, Fits 8-10″ Pizza, Includes Full Accessories, Stainless Steel (Silver)">
         </picture>
             </div>
             <div class="card-body-content">
@@ -658,6 +767,9 @@
         </div>
         <hr class="border-secondary my-4">
         <p class="text-center small mb-0">&copy; 2026 Safe Kitchen Collective. All rights reserved.</p>
+       <ul class="list-unstyled small">
+<li><a href="/sitemap.xml" class="text-decoration-none text-white">Sitemap</a></li>
+</ul>
     </div>
 </footer>
 
