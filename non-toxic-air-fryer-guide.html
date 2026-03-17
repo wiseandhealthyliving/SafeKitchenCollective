@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDBPSMEJZ5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WDBPSMEJZ5');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Guide to Non-Toxic Air Fryers (2026) | Safe Kitchen Collective</title>
+    <meta name="description" content="Your complete resource for finding the safest air fryer. Learn why glass and stainless steel are better, which materials to avoid, and see our top non-toxic picks.">
+    <meta name="keywords" content="non toxic air fryer, safest air fryer, air fryer without teflon, glass air fryer, pfas free air fryer">
+    <link rel="canonical" href="https://safekitchencollective.online/non-toxic-air-fryer-guide.html">
+        <link href="css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons & CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+     <!-- JSON-LD Schema for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is a glass air fryer better than a stainless steel one?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Both are excellent non-toxic choices. Glass offers the unique benefit of full visibility while cooking, allowing you to monitor your food without releasing heat. Stainless steel is virtually indestructible under normal use and offers a classic, durable build. The 'better' choice depends on whether you prioritize seeing your food cook (glass) or ultimate impact resistance (steel)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the safest air fryer material?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Borosilicate glass is considered the safest as it is completely inert and requires no chemical coatings. It has high chemical stability, meaning it resists leaching even with acidic foods, and meets high safety standards. High-quality 304 stainless steel is a very close second, as it is also coating-free and non-reactive."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are ceramic-coated air fryers non-toxic?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, if they are certified PFAS-free. Ceramic coatings are made from inorganic minerals, like a sand derivative, not synthetic polymers like PTFE. They provide a non-stick surface without the use of 'forever chemicals.' The best ones, like Thermolon™, have certifications from organizations like NSF, which requires rigorous toxicological assessments. However, they are still a coating and may wear down over several years of use."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do non-toxic air fryers perform as well as traditional ones?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, modern non-toxic models have closed the performance gap significantly. CHOICE, an independent testing authority, now includes glass and ceramic-coated models in their reviews, evaluating them on cooking performance just like traditional fryers. High-performance ceramic-coated models are just as fast and efficient as their Teflon-coated counterparts, and glass models provide even, consistent heat."
+                }
+            }
+        ]
+    }
+    </script>
+    
+        <!-- Custom Schema for Component Structure -->
+    <script type="application/json" id="faq-schema">
+    {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "FAQ Section Schema",
+        "description": "Schema for a frequently asked questions accordion section",
+        "type": "object",
+        "required": ["section", "container", "heading", "accordion"],
+        "properties": {
+            "section": {
+                "type": "object",
+                "required": ["id", "class", "type"],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "const": "faq",
+                        "description": "Section identifier for navigation"
+                    },
+                    "class": {
+                        "type": "string",
+                        "pattern": "^py-5 bg-light$",
+                        "description": "Bootstrap classes for padding and background"
+                    },
+                    "type": {
+                        "type": "string",
+                        "const": "faq-section",
+                        "description": "Semantic section type"
+                    }
+                }
+            },
+            "container": {
+                "type": "object",
+                "required": ["class"],
+                "properties": {
+                    "class": {
+                        "type": "string",
+                        "const": "container",
+                        "description": "Bootstrap container class for responsive layout"
+                    }
+                }
+            },
+            "heading": {
+                "type": "object",
+                "required": ["level", "text"],
+                "properties": {
+                    "level": {
+                        "type": "integer",
+                        "const": 2,
+                        "description": "Heading level for SEO hierarchy"
+                    },
+                    "text": {
+                        "type": "string",
+                        "const": "Frequently Asked Questions",
+                        "description": "Section heading text"
+                    }
+                }
+            },
+            "accordion": {
+                "type": "object",
+                "required": ["id", "class", "items"],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "const": "faqAccordion",
+                        "description": "Unique identifier for the accordion component"
+                    },
+                    "class": {
+                        "type": "string",
+                        "const": "accordion",
+                        "description": "Bootstrap accordion class"
+                    },
+                    "items": {
+                        "type": "array",
+                        "description": "List of FAQ items",
+                        "minItems": 4,
+                        "maxItems": 4,
+                        "items": {
+                            "type": "object",
+                            "required": ["id", "question", "answer", "citations", "expanded"],
+                            "properties": {
+                                "id": {
+                                    "type": "integer",
+                                    "description": "FAQ item identifier",
+                                    "minimum": 1,
+                                    "maximum": 4
+                                },
+                                "question": {
+                                    "type": "string",
+                                    "description": "The frequently asked question"
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "description": "The detailed answer to the question"
+                                },
+                                "citations": {
+                                    "type": "array",
+                                    "description": "Reference citations supporting the answer",
+                                    "items": {
+                                        "type": "string",
+                                        "pattern": "^\\[citation:\\d+\\]$"
+                                    }
+                                },
+                                "expanded": {
+                                    "type": "boolean",
+                                    "description": "Whether the FAQ item is expanded by default",
+                                    "default": false
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+    <!-- GuidePage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "The Ultimate Guide to Non-Toxic Air Fryers",
+        "description": "A comprehensive guide to choosing a non-toxic air fryer, covering material safety, health risks, and top product recommendations.",
+        "author": {
+            "@type": "Organization",
+            "name": "Safe Kitchen Collective"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Safe Kitchen Collective",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "/images/logo.png"
+            }
+        },
+        "datePublished": "2026-03-16",
+        "dateModified": "2026-03-16"
+    }
+    </script>
+
+    <!-- Breadcrumbs Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://safekitchencollective.online/index.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Non-Toxic Air Fryer Guide",
+                "item": "https://safekitchencollective.online/non-toxic-air-fryer-guide.html"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* CSS Variables - Inherited from your existing site */
+        :root {
+            --navy: #0a192f;
+            --health-green: #2d6a4f;
+            --gold-accent: #c5a059;
+            --off-white: #f8f9fa;
+            --dark-bg: #0f172a;
+            --dark-surface: #161e2e;
+            --dark-border: #1e293b;
+            --dark-hover: #2d3748;
+            --dark-green: #4ade80;
+            --dark-green-hover: #6ee7b7;
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.8;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Affiliate Disclosure */
+        #affiliate-disclosure {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+            font-size: 0.9rem;
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: var(--navy) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .navbar-brand:hover {
+            color: var(--gold-accent) !important;
+        }
+
+        .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--gold-accent) !important;
+        }
+
+        .nav-link.active {
+            color: var(--gold-accent) !important;
+            font-weight: 600;
+        }
+
+        .navbar-toggler {
+            background-color: rgba(255,255,255,0.2);
+            border: none;
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        /* Dropdown Menu */
+        .dropdown-menu {
+            background-color: var(--navy);
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .dropdown-item {
+            color: white;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: var(--gold-accent);
+        }
+
+        .dropdown-divider {
+            border-color: rgba(255,255,255,0.1);
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10000;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: var(--gold-accent);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Floating Action Buttons */
+        .floating-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 9999;
+        }
+
+        .btn-floating {
+            width: 50px;
+            height: 50px;
+            background-color: var(--navy);
+            color: white !important;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+        }
+
+        .btn-floating:hover {
+            background-color: var(--gold-accent);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        /* Back to Top Button */
+        #backToTop {
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.8);
+            transition: all 0.3s ease;
+        }
+
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            color: var(--navy);
+            font-weight: 700;
+        }
+
+        .text-green {
+            color: var(--health-green);
+        }
+
+        /* Buttons */
+        .btn-success {
+            background-color: var(--health-green);
+            border-color: var(--health-green);
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-success:hover {
+            background-color: transparent;
+            color: var(--health-green);
+            border-color: var(--health-green);
+        }
+
+        .btn-outline-custom {
+            border: 2px solid var(--navy);
+            color: var(--navy);
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-custom:hover {
+            background-color: var(--navy);
+            color: white;
+        }
+
+        /* Sections */
+        section {
+            scroll-margin-top: 70px;
+            padding: 4rem 0;
+        }
+
+        section h2 {
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        section h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: var(--gold-accent);
+        }
+
+        .bg-light {
+            background-color: var(--off-white) !important;
+        }
+
+        /* Guide Hero */
+        .guide-hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #1a2a3f 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .guide-hero h1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .guide-hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Table of Contents */
+        .toc-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .toc-item a {
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .toc-item a:hover {
+            background-color: var(--off-white);
+            color: var(--health-green);
+            padding-left: 1rem;
+        }
+
+        /* Product Cards (for recommendations) */
+        .product-card-small {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            height: 100%;
+            transition: transform 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .product-card-small:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .product-card-small h4 {
+            margin: 1rem 0 0.5rem;
+        }
+
+        .safety-badge {
+            display: inline-block;
+            background: var(--health-green);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Resources Section */
+        .resource-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--health-green);
+        }
+
+        .resource-item a {
+            color: var(--health-green);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .resource-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy);
+            color: #ccc;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: #ccc;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        footer h4 {
+            color: white;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: var(--dark-bg);
+            color: #e2e8f0;
+        }
+
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode h3,
+        body.dark-mode h4 {
+            color: white;
+        }
+
+        body.dark-mode .bg-light {
+            background-color: var(--dark-surface) !important;
+        }
+
+        body.dark-mode #affiliate-disclosure {
+            background-color: var(--dark-surface);
+            border-color: var(--dark-border);
+            color: #e2e8f0;
+        }
+
+        body.dark-mode .navbar {
+            background-color: var(--dark-surface) !important;
+        }
+
+        body.dark-mode .dropdown-menu {
+            background-color: var(--dark-surface);
+        }
+
+        body.dark-mode .toc-container,
+        body.dark-mode .product-card-small,
+        body.dark-mode .resource-item {
+            background-color: var(--dark-surface);
+            border-color: var(--dark-border);
+        }
+
+        body.dark-mode .toc-item a {
+            color: white;
+        }
+
+        body.dark-mode .toc-item a:hover {
+            background-color: var(--dark-hover);
+            color: var(--dark-green);
+        }
+
+        body.dark-mode .btn-outline-custom {
+            border-color: var(--dark-green);
+            color: var(--dark-green);
+        }
+
+        body.dark-mode .btn-outline-custom:hover {
+            background-color: var(--dark-green);
+            color: var(--dark-bg);
+        }
+
+        body.dark-mode .progress-bar {
+            background: var(--dark-green);
+        }
+
+        body.dark-mode .guide-hero {
+            background: linear-gradient(135deg, var(--dark-surface) 0%, var(--dark-border) 100%);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .floating-container {
+                bottom: 15px;
+                right: 15px;
+                gap: 8px;
+            }
+            
+            .btn-floating {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .guide-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .toc-container {
+                margin-top: 0;
+                padding: 1.5rem;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .guide-hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .floating-container,
+            .progress-container,
+            .navbar,
+            footer,
+            #affiliate-disclosure {
+                display: none !important;
+            }
+            
+            body {
+                color: black;
+                background: white;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            h2:after {
+                display: none;
+            }
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!-- Affiliate Disclosure -->
+    <section id="affiliate-disclosure" class="py-2">
+        <div class="container text-center">
+            <p class="mb-0"><strong>Affiliate Disclosure:</strong> Some links in this guide are Amazon Associate links. We earn a commission at no extra cost to you. This does not affect our evaluation methodology or rankings. We only recommend products we trust for safety and quality.</p>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SafeKitchenCollective</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    
+                    <!-- Page Section Links -->
+                    <li class="nav-item"><a class="nav-link" href="#understanding-risks">The Risks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#safe-materials">Safe Materials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#our-top-picks">Our Picks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                    
+                    <!-- Model Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reviews
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="fritaire-glass-air-fryer-review.html">Fritaire Glass</a></li>
+                            <li><a class="dropdown-item" href="ninja-crispi-pro6-air-fryer-review.html">Ninja Crispi Pro</a></li>
+                            <li><a class="dropdown-item" href="kismile-wonder-oven-pro-review.html">Kismile Wonder Oven</a></li>
+                            <li><a class="dropdown-item" href="cosori-iconic-stainless-steel-air-fryer-review.html">COSORI Iconic</a></li>
+                            <li><a class="dropdown-item" href="nutrichef-glass-halogen-air-fryer-review.html">NutriChef Halogen</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Resources Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="material-degradation-under-heat.html">Material Degradation</a></li>
+                            <li><a class="dropdown-item" href="safety-scoring-framework.html">Safety Scoring Framework</a></li>
+                            <li><a class="dropdown-item" href="safe-air-fryer-comparison-table.html">Comparison Table</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item fw-bold text-warning" href="buying-guide.html">Full 2026 Guide</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- About Link -->
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Guide Hero Section -->
+        <div class="guide-hero">
+            <div class="container">
+                <h1>The Ultimate Guide to Non-Toxic Air Fryers (2026)</h1>
+                <p>Everything you need to know to choose the safest air fryer for your family. We cut through the marketing jargon to focus on material purity, chemical safety, and long-term health.</p>
+            </div>
+        </div>
+
+        <!-- Table of Contents -->
+        <section class="py-4">
+            <div class="container">
+                <div class="toc-container">
+                    <h3 class="text-center mb-3">📖 Table of Contents</h3>
+                    <div class="toc-grid">
+                        <div class="toc-item"><a href="#introduction">Introduction</a></div>
+                        <div class="toc-item"><a href="#understanding-risks">The Risk of Non-Stick Coatings</a></div>
+                        <div class="toc-item"><a href="#safe-materials">What Makes an Air Fryer "Non-Toxic"?</a></div>
+                        <div class="toc-item"><a href="#glass-vs-stainless">Glass vs. Stainless vs. Ceramic</a></div>
+                        <div class="toc-item"><a href="#our-top-picks">Our Top Non-Toxic Picks</a></div>
+                        <div class="toc-item"><a href="#faq">Frequently Asked Questions</a></div>
+                        <div class="toc-item"><a href="#resources">Resources & Further Reading</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section id="introduction" class="py-5">
+            <div class="container">
+                <h2>Introduction: Why "Non-Toxic" Matters</h2>
+                <p class="lead">The air fryer has become a kitchen staple, but many models introduce a hidden risk: chemical coatings that can degrade over time. For health-conscious families, finding a <strong>non-toxic air fryer</strong> is no longer just a preference—it's a priority.</p>
+                <p>The concern centers on per- and polyfluoroalkyl substances, or PFAS—a large group of synthetic chemicals used to create non-stick surfaces, most commonly known by the brand name Teflon (PTFE). According to the U.S. Environmental Protection Agency (EPA), PFAS are very persistent in the environment and in the human body, meaning they don't break down easily and can accumulate over time.</p>
+                <p>Research has linked PFAS exposure to a range of health effects. The EPA notes that the most consistent finding from human studies is increased cholesterol levels among exposed populations, with more limited evidence related to infant birth weights, effects on the immune system, cancer (for PFOA), and thyroid hormone disruption. A recent 2025 study published in the journal *Ecotoxicology and Environmental Safety* also confirmed positive associations between certain PFAS chemicals and higher levels of low-density lipoprotein cholesterol (LDL-C), the "bad" cholesterol.</p>
+                <p>The good news is that a new generation of appliances offers a safer way to cook. This guide will walk you through what to look for, what to avoid, and which models represent the pinnacle of kitchen safety in 2026.</p>
+            </div>
+        </section>
+
+        <!-- The Risk of Non-Stick Coatings -->
+        <section id="understanding-risks" class="py-5 bg-light">
+            <div class="container">
+                <h2>Understanding the Risk of Traditional Non-Stick Coatings</h2>
+                <p>Most traditional air fryers feature baskets coated with PTFE, a type of PFAS. The concern with these coatings arises when they are subjected to high heat. While the FDA states that the manufacturing process for non-stick cookware results in negligible amounts of PFAS migrating to food, the coating can potentially degrade if the appliance is chipped, scratched, or overheated.</p>
+                <p>PFAS are often called "forever chemicals" because they are incredibly persistent. A comprehensive review from 2025 highlights that this widespread distribution of PFAS, their capacity to accumulate in living organisms, and their harmful effects represent a rising concern for public health. For families, a <strong>air fryer without Teflon</strong> eliminates this variable entirely, offering peace of mind with every meal.</p>
+            </div>
+        </section>
+
+        <!-- What Makes an Air Fryer Non-Toxic? -->
+        <section id="safe-materials" class="py-5">
+            <div class="container">
+                <h2>What Makes an Air Fryer Non-Toxic?</h2>
+                <p>A truly non-toxic air fryer prioritizes material purity. Independent testing organizations like CHOICE have noted a market shift as more air fryers become available with baskets made from alternative materials such as glass and steel, driven by consumers who want to avoid chemical coatings. The safest models ensure that no synthetic coatings or harmful chemicals come into contact with your food.</p>
+                <p>Here are the materials that meet our standards:</p>
+                <ul>
+                    <li><strong>Borosilicate Glass:</strong> Completely inert, thermally shock-resistant, and offers full visibility while cooking. It does not require any non-stick coating. Borosilicate glass is made with a high concentration of boron oxide, which gives it a very low thermal expansion rate and high chemical stability, meaning it won't leach substances into your food.</li>
+                    <li><strong>304 Stainless Steel (18/8):</strong> A food-grade alloy that is durable, corrosion-resistant, and free from chemical coatings. 18/8 stainless steel has an austenitic structure and is a food-grade material with high hygiene and safety features, making it ideal for cookware and kitchen utensils.</li>
+                    <li><strong>PFAS-Free Ceramic Coating:</strong> A safer alternative to traditional non-stick. When applied to metal baskets, high-quality ceramic coatings are free from PTFE, PFOA, and other PFAS chemicals. Brands like GreenPan have developed advanced coatings like Thermolon™, which is made from a sand derivative and meets stringent international food contact safety standards, including those from the FDA and the LFGB in Germany.</li>
+                </ul>
+                <p>A <strong>glass air fryer</strong> is currently the gold standard, as the cooking chamber is entirely coating-free.</p>
+            </div>
+        </section>
+
+        <!-- Glass vs. Stainless vs. Ceramic -->
+        <section id="glass-vs-stainless" class="py-5 bg-light">
+            <div class="container">
+                <h2>Glass vs. Stainless Steel vs. Ceramic-Coated</h2>
+                <p>Each material has its own set of advantages. The best choice depends on your cooking habits and priorities. Market analysis suggests that brands investing in these technologies are likely to dominate as consumer demand for clean cooking grows.</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Material</th>
+                                <th>Pros</th>
+                                <th>Cons</th>
+                                <th>Best For</th>
+                            </tr>
+                            </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Borosilicate Glass</strong></td>
+                                <td>100% inert, no coatings, full visibility, thermal shock resistant (can handle temps from -20°C to 150°C).</td>
+                                <td>Heavier, can be bulky, requires careful handling.</td>
+                                <td>Those wanting absolute material purity and the ability to watch their food cook.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>304 Stainless Steel (18/8)</strong></td>
+                                <td>Extremely durable, non-reactive, high corrosion resistance, no coatings.</td>
+                                <td>Food can stick without proper oil or technique, no visibility.</td>
+                                <td>Long-term durability and a classic, commercial kitchen aesthetic.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PFAS-Free Ceramic Coating</strong></td>
+                                <td>Excellent non-stick performance, easy to clean, no PFAS chemicals, some coatings (like Thermolon™) are certified by NSF.</td>
+                                <td>Coating can wear down over time, not as permanent as solid glass or steel.</td>
+                                <td>Families who prioritize easy cleanup and non-stick convenience.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--<p class="small text-muted mt-3"><i>Affiliate Disclosure: If you purchase through links in this table, we may earn a commission.</i></p>-->
+            </div>
+        </section>
+
+        <!-- Our Top Non-Toxic Picks -->
+        <section id="our-top-picks" class="py-5">
+            <div class="container">
+                <h2>Our Top Non-Toxic Air Fryer Picks for 2026</h2>
+                <p>After the research was done, and in using our 100-point safety framework, these are the models that stand out as the safest and best-performing on the market. These models reflect the trends we're seeing toward PFAS-free materials and durable designs.</p>
+                
+                <div class="row g-4 mt-4">
+                    <!-- Fritaire -->
+                    <div class="col-md-4">
+                        <div class="product-card-small">
+                            <span class="safety-badge">96/100 Safety Score</span>
+                            <h4>Fritaire Glass Pro</h4>
+                            <p><strong>Material:</strong> Full glass bowl + stainless steel rack. No coatings.</p>
+                            <p>The gold standard for purity. Its self-cleaning function and rotisserie make it a joy to use.</p>
+                            <a href="fritaire-glass-air-fryer-review.html" class="btn btn-outline-custom btn-sm w-100">Read Full Review</a>
+                            <p class="small text-muted mt-2"><i>Affiliate link in full review.</i></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Ninja Crispi Pro -->
+                    <div class="col-md-4">
+                        <div class="product-card-small">
+                            <span class="safety-badge">94/100 Safety Score</span>
+                            <h4>Ninja Crispi Pro</h4>
+                            <p><strong>Material:</strong> Borosilicate glass containers with BPA-free plastic handles.</p>
+                            <p>Modular and versatile. The 6-quart container can roast a whole chicken, and the containers double as storage.</p>
+                            <a href="ninja-crispi-pro6-air-fryer-review.html" class="btn btn-outline-custom btn-sm w-100">Read Full Review</a>
+                            <p class="small text-muted mt-2"><i>Affiliate link in full review.</i></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Kismile -->
+                    <div class="col-md-4">
+                        <div class="product-card-small">
+                            <span class="safety-badge">90/100 Safety Score</span>
+                            <h4>Kismile 18QT Oven</h4>
+                            <p><strong>Material:</strong> Glass and stainless steel interior.</p>
+                            <p>The largest capacity non-toxic option, perfect for big families. It handles a 10-inch pizza with ease.</p>
+                            <a href="kismile-wonder-oven-pro-review.html" class="btn btn-outline-custom btn-sm w-100">Read Full Review</a>
+                            <p class="small text-muted mt-2"><i>Affiliate link in full review.</i></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mt-4">
+                    <!-- COSORI Iconic -->
+                    <div class="col-md-6">
+                        <div class="product-card-small">
+                            <span class="safety-badge">89/100 Safety Score</span>
+                            <h4>COSORI Iconic Stainless Steel</h4>
+                            <p><strong>Material:</strong> Stainless steel body and PFAS-free ceramic-coated basket.</p>
+                            <p>A premium option that minimizes plastic exposure. Features smart app control and a 5-year warranty.</p>
+                            <a href="cosori-iconic-stainless-steel-air-fryer-review.html" class="btn btn-outline-custom btn-sm w-100">Read Full Review</a>
+                            <p class="small text-muted mt-2"><i>Affiliate link in full review.</i></p>
+                        </div>
+                    </div>
+                    
+                    <!-- NutriChef Halogen -->
+                    <div class="col-md-6">
+                        <div class="product-card-small">
+                            <span class="safety-badge">87/100 Safety Score</span>
+                            <h4>NutriChef 13-Qt Halogen</h4>
+                            <p><strong>Material:</strong> Full borosilicate glass bowl, stainless steel accessories.</p>
+                            <p>Massive capacity at an affordable price. Uses halogen heating for fast, even cooking.</p>
+                            <a href="nutrichef-glass-halogen-air-fryer-review.html" class="btn btn-outline-custom btn-sm w-100">Read Full Review</a>
+                            <p class="small text-muted mt-2"><i>Affiliate link in full review.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-5 bg-light">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Is a glass air fryer better than a stainless steel one?
+                            </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                Both are excellent non-toxic choices. Glass offers the unique benefit of full visibility while cooking, allowing you to monitor your food without releasing heat [citation:4]. Stainless steel is virtually indestructible under normal use and offers a classic, durable build [citation:5]. The "better" choice depends on whether you prioritize seeing your food cook (glass) or ultimate impact resistance (steel).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                What is the safest air fryer material?
+                            </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Borosilicate glass is considered the safest as it is completely inert and requires no chemical coatings. It has high chemical stability, meaning it resists leaching even with acidic foods, and meets high safety standards. High-quality 304 stainless steel is a very close second, as it is also coating-free and non-reactive [citation:5].
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Are ceramic-coated air fryers non-toxic?
+                            </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Yes, if they are certified PFAS-free. Ceramic coatings are made from inorganic minerals, like a sand derivative, not synthetic polymers like PTFE. They provide a non-stick surface without the use of "forever chemicals." The best ones, like Thermolon™, have certifications from organizations like NSF, which requires rigorous toxicological assessments. However, they are still a coating and may wear down over several years of use.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                Do non-toxic air fryers perform as well as traditional ones?
+                            </button>
+                        </h3>
+                        <div id="faq4" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Yes, modern non-toxic models have closed the performance gap significantly. CHOICE, an independent testing authority, now includes glass and ceramic-coated models in their reviews, evaluating them on cooking performance just like traditional fryers. High-performance ceramic-coated models are just as fast and efficient as their Teflon-coated counterparts, and glass models provide even, consistent heat.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources & Further Reading Section -->
+        <section id="resources" class="py-5">
+            <div class="container">
+                <h2>Resources & Further Reading</h2>
+                <p>The information in this guide is gathered from trusted sources, including government agencies, scientific journals, and independent testing organizations. We encourage you to explore these resources for more information.</p>
+                
+                <div class="resource-item">
+                    <h4>U.S. Environmental Protection Agency (EPA): Basic Information on PFAS</h4>
+                    <p>Official government information on what PFAS are, where they're found, and their potential health effects.</p>
+                    <a href="https://19january2021snapshot.epa.gov/pfas/basic-information-pfas_.html" target="_blank" rel="noopener">Read more →</a>
+                </div>
+                
+                <div class="resource-item">
+                    <h4>U.S. Food and Drug Administration (FDA): Authorized Uses of PFAS in Food Contact Applications</h4>
+                    <p>Detailed information on how the FDA regulates PFAS in cookware and food packaging, including migration potential.</p>
+                    <a href="https://www.fda.gov/food/process-contaminants-food/authorized-uses-pfas-food-contact-applications" target="_blank" rel="noopener">Read more →</a>
+                </div>
+                
+                <div class="resource-item">
+                    <h4>PubMed: PFAS Toxicity Review (2025)</h4>
+                    <p>A comprehensive scientific review of PFAS toxicity on skeletal and cognitive well-being, highlighting concerns for public health.</p>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/39976583/" target="_blank" rel="noopener">Read the study →</a>
+                </div>
+                
+                <div class="resource-item">
+                    <h4>PubMed: PFAS and Cholesterol Study (2025)</h4>
+                    <p>Recent research confirming the association between PFAS exposure and higher cholesterol levels in adults.</p>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/40633188/" target="_blank" rel="noopener">Read the study →</a>
+                </div>
+                
+                <div class="resource-item">
+                    <h4>CHOICE Australia: Best Glass and Ceramic Air Fryers</h4>
+                    <p>Independent testing and reviews of air fryers designed to avoid Teflon coatings.</p>
+                    <a href="https://www.choice.com.au/home-and-living/kitchen/benchtop-cooking/articles/best-glass-and-ceramic-coated-air-fryers-if-you-want-to-avoid-teflon" target="_blank" rel="noopener">Read the report →</a>
+                </div>
+                
+                <div class="resource-item">
+                    <h4>Haers: The Difference Between Regular and Borosilicate Glass</h4>
+                    <p>A detailed breakdown of the properties and benefits of borosilicate glass for food contact.</p>
+                    <a href="https://www.haers.com/difference-between-regular-glass-and-borosilicate-glass-water-bottle/" target="_blank" rel="noopener">Read more →</a>
+                </div>
+                
+                <div class="resource-item">
+                    <h4>Tuofa: 18/8 Stainless Steel Properties</h4>
+                    <p>An engineering overview of 304 (18/8) stainless steel, its properties, and why it's food safe.</p>
+                    <a href="https://www.tuofa-cncmachining.com/tuofa-blog/18-8-stainless-steel-properties.html" target="_blank" rel="noopener">Read more →</a>
+                </div>
+                
+                <div class="resource-item">
+                    <h4>The Sun Malaysia: GreenPan Launches Thermolon 9G</h4>
+                    <p>An article detailing the launch and safety certifications of advanced PFAS-free ceramic coating technology.</p>
+                    <a href="https://thesun.my/spotlight/greenpan-launches-thermolon-9g-pfas-free-coating-in-malaysia-gf15108860/" target="_blank" rel="noopener">Read more →</a>
+                </div>
+                
+                <p class="small text-muted mt-3"><i>Note: Some of the external links above may contain affiliate disclosures from their respective publishers.</i></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4>SafeKitchenCollective</h4>
+                    <p class="text-white">Your family deserves appliances that are genuinely safe. We strip away marketing fluff to deliver evidence-backed guidance on material purity, chemical-free cooking, and long-term health protection.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Information</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html#disclosure">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Connect With Us</h4>
+                    <div class="d-flex justify-content-center gap-3 fs-5">
+                        <a href="https://www.facebook.com/share/1B3gQbiE1C/" aria-label="Visit Facebook Page" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/safekitchencollective" aria-label="Visit Instagram Page" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="https://pin.it/1lNnPCJtZ" aria-label="Visit Pinterest Page" class="text-white"><i class="bi bi-pinterest"></i></a>
+                        <a href="https://www.tiktok.com/@safekitchencollective" aria-label="Visit TikTok Page" class="text-white"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <p class="small mb-0">&copy; 2026 Safe Kitchen Collective. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-container">
+        <a href="index.html" class="btn-floating" title="Go to Home">
+            <i class="bi bi-house-door-fill"></i>
+        </a>
+        <button onclick="toggleDarkMode()" class="btn-floating" id="themeToggle" title="Toggle Dark/Light Mode">
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+        </button>
+        <button onclick="scrollToTop()" id="backToTop" class="btn-floating" title="Back to Top">
+            <i class="bi bi-arrow-up-short" style="font-size: 1.5rem;"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.getElementById("backToTop");
+            const themeIcon = document.getElementById("themeIcon");
+            const progressBar = document.getElementById("myBar");
+
+            if (backToTopButton && themeIcon && progressBar) {
+                window.addEventListener('scroll', function() {
+                    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    const scrolled = (winScroll / height) * 100;
+                    progressBar.style.width = scrolled + "%";
+
+                    if (winScroll > 300) {
+                        backToTopButton.classList.add("show");
+                    } else {
+                        backToTopButton.classList.remove("show");
+                    }
+                });
+
+                if (localStorage.getItem('theme') === 'dark') {
+                    document.body.classList.add('dark-mode');
+                    themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+                }
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleDarkMode() {
+            const body = document.body;
+            const themeIcon = document.getElementById("themeIcon");
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
+            }
+        }
+    </script>
+</body>
+</html>
